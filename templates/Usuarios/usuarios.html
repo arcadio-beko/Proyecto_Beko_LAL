@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="au theme template">
+	<meta name="author" content="Hau Nguyen">
+	<meta name="keywords" content="au theme template">
+
+	<!-- Title Page-->
+	<title>Usuarios</title>
+
+	<link href="../../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<!-- Bootstrap CSS-->
+	<link href="../../vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="../../css/toastr.css">
+
+	<!-- Vendor CSS-->
+	<link href="../../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+	<link href="../../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+	<link href="../../vendor/wow/animate.css" rel="stylesheet" media="all">
+	<link href="../../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+	<link href="../../vendor/slick/slick.css" rel="stylesheet" media="all">
+	<link href="../../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+	<link href="../../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+	<!-- Main CSS-->
+	<link href="../../css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition" id="btncerrar">
+	<div class="page-wrapper">
+		<!-- HEADER MOBILE-->
+		
+		<!-- END HEADER MOBILE-->
+		<aside >
+			<div data-include="../menu_lateral/menu_lateral"></div>
+		</aside>
+		<!-- END MENU SIDEBAR-->
+
+	
+		<!-- PAGE CONTAINER-->
+		<div class="page-container">
+			<!-- HEADER DESKTOP-->
+			
+			<!-- HEADER DESKTOP-->
+			<!-- MAIN CONTENT-->
+
+			
+
+			<div class="main-content" style="background-color: #80808017;">
+				
+				<div class="section__content section__content--p30">
+
+					
+					<div class="container-fluid">
+						
+						<div class="row m-t-30">
+							
+                            <div class="col-md-12">
+								
+								<!-- DATA TABLE-->
+								<h2 class="float-left">Lista de usuarios</h2>
+								
+								<button type="button" id="btncrear" class="btn btn-warning float-right">AGREGAR USUAIRO</button>
+									<br>
+									<br>
+                                <div class="table-responsive table--no-card m-b-30">
+									
+                                    <table  class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+												<th>#</th>
+												<th>Nombre</th>
+                                                <th>Apellidos</th>
+                                                <th>Sexo</th>
+												<th>Tipo de usuario</th>
+                                                <th>Documento</th>
+                                                <th>Usuario</th>
+                                                <th>Edit</th>
+                                            </tr>
+										</thead>
+											<tbody>
+                                            
+                                           
+											</tbody>
+                                        
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+						</div>
+						
+						
+
+						<div >
+							<div class="card" id='conten-crear'>
+								<div class="card-header">
+									<strong>Agregar usuario</strong> 
+								</div>
+								<div class="card-body ">
+									<form id="formcrear">
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fa fa-user"></i>
+												</div>
+												<input type="text"  name="username" placeholder="Nombres" class="form-control" id="inputnombre">
+											</div>
+
+
+										</div>
+
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fa fa-user"></i>
+												</div>
+												<input type="text"   placeholder="Apellidos" class="form-control" id="inputapellido">
+											</div>
+
+
+										</div>
+
+										<div class="form-group">
+											
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-venus-mars"></i>
+												</div>
+												<select name="select"  class="form-control" id="inputsexo">
+													<option >Selecciona tu sexo</option>
+													<option id="Masculino">Masculino</option>
+													<option id="Femenino">Femenino</option>
+													<option id="Indefinido">Indefinido</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-id-card"></i>
+												</div>
+												<select name="select"  class="form-control" id="inputtipo">
+													<option >Tipo de usuario</option>
+													<option id="Admin">Admin</option>
+													<option id="Moderador">Moderador</option>
+													<option id="Invitado">Invitado</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-id-card"></i>
+												</div>
+												<input type="number"  placeholder="Documento" class="form-control" id="inputdocumento">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-user-secret"></i>
+												</div>
+												<input type="text"  name="password" placeholder="Username" class="form-control" id="inputusuario">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fa fa-asterisk"></i>
+												</div>
+												<input type="password" name="password" placeholder="Password" class="form-control" id="inputpassword"> 
+											</div>
+										</div>
+										<div >
+											
+
+											<button class="btn btn-danger btn-sm float-right" id="btncancel" type="button">
+												 Cancelar
+											</button>
+
+											<button type="submit" class="btn btn-primary btn-sm float-right"  style="margin-right: 10px;">
+												 Enviar
+											</button>
+											
+										</div>
+										
+									</form>
+								</div>
+								
+							</div>
+
+							<div class="card" id='conten-editar'>
+								<div class="card-header">
+									<strong>Editar usuario</strong> 
+								</div>
+								<div class="card-body ">
+									<form id="formEditar">
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fa fa-user"></i>
+												</div>
+												<input type="text"  name="username" placeholder="Nombres" class="form-control" id="inputnombreEdit">
+											</div>
+
+
+										</div>
+
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fa fa-user"></i>
+												</div>
+												<input type="text"  name="username" placeholder="Apellidos" class="form-control" id="inputapellidoEdit">
+											</div>
+
+
+										</div>
+
+										<div class="form-group">
+											
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-venus-mars"></i>
+												</div>
+												<select name="select" id="select" class="form-control" id="inputsexoEdit">
+													<option >Selecciona tu sexo</option>
+													<option id="Masculino">Masculino</option>
+													<option id="Femenino">Femenino</option>
+													<option id="Indefinido">Indefinido</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-id-card"></i>
+												</div>
+												<select name="select" id="select" class="form-control" id="inputtipoEdit">
+													<option >Tipo de documento</option>
+													<option id="Cedula de ciudadania">Cedula de ciudadania</option>
+													<option id="Tareta de identidad">Tarjete de identida</option>
+													<option id="Pasaporte">Pasaporte</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-id-card"></i>
+												</div>
+												<input type="number"  placeholder="Documento" class="form-control" id="inputdocumentoEdit"> 
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-addon">
+													<i class="fas fa-user-secret"></i>
+												</div>
+												<input type="text"  name="password" placeholder="Username" class="form-control" id="inputusuarioEdit">
+											</div>
+										</div>
+
+										
+											<button id="btncancelEdit" class="btn btn-danger btn-sm float-right">
+												 Cancelar
+											</button>
+
+											<button type="submit" class="btn btn-primary btn-sm float-right"  style="margin-right: 10px;">
+												 Enviar
+											</button>
+										
+									</form>
+								</div>
+								
+							</div>
+
+
+
+						</div>
+
+
+						<div class="row">
+								<div class="col-md-12 ">
+										<div class="copyright">
+												<p>Copyright © 2020 Beko. Todo los derechos reservados al Beko.</p>
+										</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		
+
+
+		</div>
+		<!-- END PAGE CONTAINER-->
+
+	</div>
+
+	<!-- Jquery JS-->
+	<script src="../../vendor/jquery-3.2.1.min.js"></script>
+	<script src="../../js/ConexionServ.js"></script>
+
+	<!-- Ocultar -->
+
+
+	<!-- Bootstrap JS-->
+	<script src="../../vendor/bootstrap-4.1/popper.min.js"></script>
+	<script src="../../vendor/bootstrap-4.1/bootstrap.min.js"></script>
+	<!-- Vendor JS       -->
+	<script src="../../vendor/slick/slick.min.js">
+	</script>
+
+	<script src="../../js/toastr.js"></script>
+	<script src="../../vendor/wow/wow.min.js"></script>
+	<script src="../../vendor/animsition/animsition.min.js"></script>
+	<script src="../../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+	</script>
+	<script src="../../vendor/counter-up/jquery.waypoints.min.js"></script>
+	<script src="../../vendor/counter-up/jquery.counterup.min.js">
+	</script>
+	<script src="../../vendor/circle-progress/circle-progress.min.js"></script>
+	<script src="../../vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+	<script src="../../vendor/chartjs/Chart.bundle.min.js"></script>
+	<script src="../../vendor/select2/select2.min.js">
+	</script>
+
+	<!-- Main JS-->
+	<script src="../../js/main.js"></script>
+	<script src="usuarios.js"></script>
+	<script src="../menu_lateral/menu_lateral.js"></script>
+
+
+</body>
+
+</html>
+<!-- end document-->
